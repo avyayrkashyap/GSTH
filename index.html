@@ -2,23 +2,26 @@
 
 <html>
     <head>
-        <script>
-        function init() {
-Tabletop.init( { key: ‘https://docs.google.com/spreadsheets/d/1_FYsT3Sf9aFbJe9p-E31pSdQTKqoD2iCCyGgP-vFtlA',
-callback: function(data, tabletop) { 
-console.log(data)
-},
-simpleSheet: true } )
-}
-window.addEventListener(‘DOMContentLoaded’, init)
-        </script>
+        
+        
+        
     </head>
     <body>
-        <script>
-            $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vSdznYop-DGifIrz9zagq_ovOrx8b3fD51gEstZ-sVF5WZegqB1WWGW6dH1e3fVImI9pAXXcALXxICK/pub?output=csv").done(function(result){
-                alert(result);
-            });
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
+        var spreadsheetId = "1Aoz_GcPYoEIMMNd1N_meYNOp8TJ0fCXpp1AoUhCpwZo",
+    url = "https://spreadsheets.google.com/feeds/list/1_FYsT3Sf9aFbJe9p-E31pSdQTKqoD2iCCyGgP-vFtlA/od6/public/basic?alt=json";
+
+$.get({
+  url: url,
+  success: function(response) {
+    console.log(response);
+  }
+});
+            
+            
         </script>
+        
         <div>Hello</div>
     </body>
 </html>

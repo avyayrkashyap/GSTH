@@ -18,16 +18,25 @@
       function drawChart() {
 
         // Create the data table.
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+        var queryString = encodeURIComponent('SELECT A,B');
+        
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1_FYsT3Sf9aFbJe9p-E31pSdQTKqoD2iCCyGgP-vFtlA/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString');
+        query.send(handleQueryResponse);
+      }
+      
+      function handleQueryResponse(response){
+       if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return; 
+      }
+        
+        var data = response.getDataTable();
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
 
         var options = {
-          title: 'Company Performance',
+          title: 'handle Unity like a boss',
           curveType: 'function',
           legend: { position: 'bottom' },
           height: 500,
@@ -35,9 +44,7 @@
         };
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+        
     </script>
   </head>
 

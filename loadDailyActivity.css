@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.buttons{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	
+}
+
+.buttons a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+}
+#active{
+	border: 1px solid #000000;
+	font-weight: 800;
+}
+
+.buttons a:hover{
+	box-shadow: 0 0 5px 0 #c0c0c0;
+}
+
+#chart_div {
+	padding-top: 30px;
+}

@@ -1,0 +1,41 @@
+.navbar{
+	
+	width: 100%;
+	padding-top: 10px;
+	float: left;
+	
+	margin: auto;
+	height: 70px;
+	top: 0;
+	position: fixed;
+	background-color: white;
+	box-shadow: 0 2px 5px 0px #F3F3F3;
+}
+
+.navbaritems{
+	width: 80%;
+}
+
+.restofnavbar{
+	align-items: center;
+	float: right;
+	margin: 20px;
+	font-weight: 400;
+	font-family: 'Barlow', 'sans-serif';
+	text-decoration: none;
+	color: black;
+	
+}
+
+.restofnavbar a{
+	padding: 20px 10px;
+}
+
+.restofnavbar:hover{
+	/*animation-name: namecolour;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;*/
+	font-weight: 700;
+}@charset "UTF-8";
+/* CSS Document */
+

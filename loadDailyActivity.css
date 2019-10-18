@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
+body{
+	width: 85%;
+	margin: auto;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+h1{
+	font-family: 'Barlow', 'sans-serif';
+	font-size: 30pt;
+	font-weight: 800;
+	padding: 30px;
+}
+
 .buttons{
 	width: 80%;
 	margin: auto;
@@ -16,11 +33,13 @@
 }
 #active{
 	border: 1px solid #000000;
+	border-radius: 8px;
 	font-weight: 800;
 }
 
 .buttons a:hover{
 	box-shadow: 0 0 5px 0 #c0c0c0;
+	border-radius: 8px;
 }
 
 #chart_div {

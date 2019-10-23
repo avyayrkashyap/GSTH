@@ -1,15 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
 .navbar{
 	
 	width: 100%;
 	padding-top: 10px;
 	float: left;
-	
 	margin: auto;
+	z-index: 1;
 	height: 70px;
 	top: 0;
 	position: fixed;
 	background-color: white;
 	box-shadow: 0 2px 5px 0px #F3F3F3;
+
 }
 
 .navbaritems{
@@ -36,6 +40,27 @@
 	animation-duration: 1s;
 	animation-iteration-count: infinite;*/
 	font-weight: 700;
-}@charset "UTF-8";
-/* CSS Document */
+}
+
+.space{
+	height: 75px;
+}
+
+@media only screen and (max-width: 735px) {
+	.navbar{
+		width: 100%;
+		height: 140px;
+		z-index: 1;
+	}
+	
+	.restofnavbar a{
+		width: 100%;
+		margin: auto;
+		float: left;
+		text-align: center;
+	}
+	.space{
+		height: 135px;
+	}
+}
 

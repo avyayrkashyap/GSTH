@@ -28,6 +28,7 @@
 	font-family: 'Barlow', 'sans-serif';
 	text-decoration: none;
 	color: black;
+	height: 70px;
 	
 }
 
@@ -43,7 +44,7 @@
 }
 
 .space{
-	height: 75px;
+	height: 95px;
 }
 
 @media only screen and (max-width: 735px) {

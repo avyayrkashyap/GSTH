@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body{
+	width: 85%;
+	margin: auto;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+h1{
+	font-family: 'Barlow', 'sans-serif';
+	font-size: 30pt;
+	font-weight: 800;
+	padding: 30px;
+}
+
+.buttons{
+	width: 100px;
+	position: fixed;
+	height: 500px;
+	min-width: 120px;
+	margin: auto;
+	text-align: center;
+	overflow: scroll;
+	float: left;
+	border: 1px solid #D8D8D8;
+	background-color: white;
+	bottom: 20px;
+	
+	
+}
+
+.buttons a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+}
+#active{
+	font-weight: 800;
+}
+
+.buttons a:hover{
+	box-shadow: 0 0 5px 0 #c0c0c0;
+}
+
+#chart_div {
+	padding-top: 29px 30px;
+	float: right;
+	width: 80%;
+	
+}
+
+.exerciseinfo{
+	height: 10%;
+	width: 80%;
+	float: right;
+	padding: 40px 0;
+}
+
+.exerciseinfo a{
+	text-align: center;
+	float: left;
+	display: inline-block;
+	padding: 0px 60px 0 0;
+	
+}
+
+@media only screen and (max-width: 735px) {
+	body{
+		width: 95%;
+		margin: auto;
+	}
+	
+	.buttons{
+		width: 100%;
+		height: 200px;
+		position: relative;
+		
+	}
+	
+	.buttons a{
+		width: 80%;
+		margin: auto;
+		
+	}
+	
+	.exerciseinfo{
+		width: 100%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.exerciseinfo a{
+		float: left;
+		width: 100%;
+		padding: 25px 0 5px 0;
+		
+	}
+	
+	#chart_div{
+		width: 100%;
+		float: left;
+	}
+	
+}

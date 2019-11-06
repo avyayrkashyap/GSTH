@@ -19,7 +19,8 @@ h1{
 }
 
 .buttons{
-	width: 10%;
+	width: 100px;
+	position: fixed;
 	height: 500px;
 	min-width: 120px;
 	margin: auto;
@@ -27,7 +28,9 @@ h1{
 	overflow: scroll;
 	float: left;
 	border: 1px solid #D8D8D8;
-	border-radius: 10px;
+	background-color: white;
+	bottom: 20px;
+	
 	
 }
 
@@ -38,19 +41,16 @@ h1{
 	color: black;
 }
 #active{
-	border: 1px solid #c0c0c0;
-	border-radius: 8px;
 	font-weight: 800;
 }
 
 .buttons a:hover{
 	box-shadow: 0 0 5px 0 #c0c0c0;
-	border-radius: 8px;
 }
 
 #chart_div {
 	padding-top: 29px 30px;
-	float: left;
+	float: right;
 	width: 80%;
 	
 }
@@ -58,14 +58,15 @@ h1{
 .exerciseinfo{
 	height: 10%;
 	width: 80%;
-	float: left;
-	padding: 30px;
+	float: right;
+	padding: 40px 0;
 }
 
 .exerciseinfo a{
 	text-align: center;
+	float: left;
 	display: inline-block;
-	padding: 0 60px 0 0;
+	padding: 0px 60px 0 0;
 	
 }
 
@@ -78,6 +79,7 @@ h1{
 	.buttons{
 		width: 100%;
 		height: 200px;
+		position: relative;
 		
 	}
 	
@@ -96,7 +98,7 @@ h1{
 	.exerciseinfo a{
 		float: left;
 		width: 100%;
-		padding-bottom: 5px;
+		padding: 25px 0 5px 0;
 		
 	}
 	

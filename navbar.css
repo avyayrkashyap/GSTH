@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 .navbar{
 	
 	width: 100%;
@@ -50,15 +55,17 @@
 @media only screen and (max-width: 735px) {
 	.navbar{
 		width: 100%;
-		height: 140px;
+		height: 70px;
 		z-index: 1;
 	}
 	
 	.restofnavbar a{
-		width: 100%;
+		font-size: 10pt;
+		width: 25%;
 		margin: auto;
 		float: left;
 		text-align: center;
+		overflow-x: scroll;
 	}
 	.space{
 		height: 135px;

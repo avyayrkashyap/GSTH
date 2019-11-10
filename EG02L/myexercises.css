@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	width: 80%;
+	margin: auto;
+}
+
+.exbox{
+	margin: 10px 10px;
+	height: 300px;
+	width: 45%;
+	min-width: 415px;
+	float: left;
+	box-shadow: 0 0 2px 2px #f4f4f4;
+}
+
+.exname{
+	padding: 20px;
+	height: 60px;
+	float: left;
+	font-family: Barlow, sans-serif;
+	font-weight: 600;
+	font-size: 18pt;
+	width: 40%;
+	text-align: center;
+}
+
+.exinfo{
+	padding: 20px;
+	height: 60px;
+	float: right;
+	font-family: Barlow, sans-serif;
+	font-weight: 400;
+	font-size: 12pt;
+	width: 40%;
+	text-align: center;
+}
+
+img{
+	height: 200px;
+	float: left;
+	padding: 0 15%;
+}
+@media only screen and (max-width: 860px) {
+	
+	body{
+		width: 100%
+	}
+	
+	.exbox{
+		width: 100%;
+		float: left;
+	}
+	
+}
